@@ -8,7 +8,6 @@ var (
 	fizz     = "Fizz"
 	buzz     = "Buzz"
 	fizzbuzz = "FizzBuzz"
-	unused   = "unused"
 )
 
 // FizzBuzz returns a string based on the following rules:
