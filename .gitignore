@@ -21,4 +21,5 @@
 go.work
 
 # Custom
-out/
+out/*
+!out/.gitkeep

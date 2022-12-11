@@ -15,7 +15,7 @@ clean:
 	rm -rf $(OUT_DIR)
 
 test:
-	$(GO) test -coverprofile=$(COVERAGE_FILE) ./...
+	$(GO) test -cover ./... -coverprofile=$(COVERAGE_FILE)
 
 run:
 	$(GO) run $(MAIN_FILE)
