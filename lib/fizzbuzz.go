@@ -11,9 +11,14 @@ var (
 )
 
 // FizzBuzz returns a string based on the following rules:
+// - If n is divisible by 3, return "Fizz"
+// - If n is divisible by 5, return "Buzz"
+// - If n is divisible by 3 and 5, return "FizzBuzz"
+// - Otherwise, return n as a string
+// If n is less than 0, return an error
 func FizzBuzz(n int) (string, error) {
 	// Check if n is greater than 0
-	if n < 0 {
+	if n <= 0 {
 		return "", fmt.Errorf("n must be greater than 0")
 	}
 
