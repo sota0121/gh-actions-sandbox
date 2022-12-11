@@ -12,7 +12,7 @@ build:
 	$(GO) build -o $(BIN_PATH) $(MAIN_FILE)
 
 clean:
-	rm -rf $(OUT_DIR)
+	rm -rf $(OUT_DIR)/*
 
 test:
 	$(GO) test -cover ./... -coverprofile=$(COVERAGE_FILE)
